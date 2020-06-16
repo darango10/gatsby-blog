@@ -1,0 +1,23 @@
+import React from "react"
+import Title from "../Title"
+import services from "../../constants/services"
+import styles from "../../css/services.module.css"
+
+const Services = () => {
+  return (
+    <section className={styles.services}>
+      <Title titulo={"Nuestros"} subtitulo={"Servicios"}/>
+      <div className={styles.center}>
+        {services.map((item, index) => (
+          <article key={index} className={styles.service}>
+            <span>{item.icon}</span>
+            <h4>{item.title}</h4>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default Services
