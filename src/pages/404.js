@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import styles from "../css/error.module.css"
-import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Banner from "../components/Banner"
 
 const error = () => {
@@ -10,7 +10,7 @@ const error = () => {
       <header className={styles.error}>
         <Banner title={"oops! 404"}
                 info={"Pagina no encontrada"}
-        ><Link to={'/'} className='btn-white'>Ir a inicio</Link></Banner>
+        ><AniLink fade to={'/'} className='btn-white'>Ir a inicio</AniLink></Banner>
       </header>
     </Layout>
   )
