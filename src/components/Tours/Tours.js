@@ -17,7 +17,7 @@ const ToursComponent = () => {
                       days
                       images {
                           fluid {
-                              ...GatsbyContentfulFluid_tracedSVG
+                              ...GatsbyContentfulFluid_withWebp
                           }
                       }
                   }
