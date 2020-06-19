@@ -46,6 +46,7 @@
   text-align: left;
 }
 .footer h3 {
+  font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 0;
 }
@@ -59,6 +60,7 @@
 }
 .info h6,
 .info h4 {
+  font-size: 18px;
   margin-bottom: 0;
 }
 .country {
@@ -66,6 +68,7 @@
   color: var(--primaryColor);
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 .icon {
   margin-right: 0.4rem;

@@ -19,7 +19,6 @@ const getAbout = graphql`
 const About = () => {
 
   const { aboutImage } = useStaticQuery(getAbout);
-  console.log(aboutImage)
 
   return (
     <section className={styles.about}>

@@ -1,27 +1,46 @@
 .day {
-  margin: 2rem 0;
+    margin: 2rem 0;
 }
+
 .day h4 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
+
 .btn svg {
-  font-size: 1.5rem;
-  color: var(--primaryColor);
+    font-size: 1.5rem;
+    color: var(--primaryColor);
 }
+
 .day p {
-  line-height: 2;
-  transition: var(--mainTransition);
+    line-height: 2;
+    transition: var(--mainTransition);
 }
+
+.nav-links {
+    transition: var(--mainTransition);
+    height: 0;
+    overflow: hidden;
+}
+
+.show-nav {
+    height: 316px;
+}
+
 @media screen and (min-width: 992px) {
-  .day h4 {
-    width: 400px;
-  }
+    .day h4 {
+        width: 400px;
+    }
+
+    .show-nav {
+        height: 130px;
+    }
 }

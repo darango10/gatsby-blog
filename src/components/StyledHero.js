@@ -16,7 +16,7 @@ export default styled(StyledHero)`
   : "50vh"} ;
   background:${props => props.home
   ? "linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7))"
-  : "none"};
+  : "rgba(255, 255, 255, 0.2)"};
   background-position:center;
   background-size: cover;
   opacity:1!important;
