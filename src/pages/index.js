@@ -7,6 +7,7 @@ import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from "../components/SEO"
 
 export const query = graphql`
     query {
@@ -24,6 +25,7 @@ export const query = graphql`
 export default ({data}) => {
   return (
     <Layout>
+      <SEO title='Home'/>
       <StyledHero home={"true"} img={data.defaultBcg.childImageSharp.fluid}>
         <Banner title={"Continua explorando"} info={"Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n" +
         "          Accusantium ad animi aperiam cum dignissimos."}

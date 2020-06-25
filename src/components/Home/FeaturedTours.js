@@ -30,7 +30,6 @@ const FeaturedTours = () => {
   `)
 
   const tours = (getTours.featuredTours.edges)
-  console.log(tours)
 
   return (
     <section className={styles.tours}>
