@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import StyledHero from "../components/StyledHero"
 import ToursComponent from "../components/Tours/Tours"
+import SEO from "../components/SEO"
 
 export const query = graphql`
     query {
@@ -20,6 +21,7 @@ export const query = graphql`
 const Tours = ({ data }) => {
   return (
     <Layout>
+      <SEO title={'Tours'}/>
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
 
       </StyledHero>

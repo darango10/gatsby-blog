@@ -6,6 +6,7 @@ import Layout from "../components/Layout"
 import Title from "../components/Title"
 import BlogCard from "../components/Blog/BlogCard"
 import { FaArrowLeft, FaArrowRight } from "react-icons/all"
+import SEO from "../components/SEO"
 
 export const query = graphql`
     query PostPerPage($skip: Int, $limit: Int) {
@@ -33,6 +34,7 @@ const BlogListTemplate = (props) => {
   console.log(props)
   return (
     <Layout>
+      <SEO title={'Blogs'}/>
       <section className={styles.blog}>
         <Title titulo={"Ultimos"} subtitulo={"Posts"}/>
         <div className={styles.center}>

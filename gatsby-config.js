@@ -17,7 +17,7 @@ module.exports = {
     author: "@daniel",
     twitterUsername: "@darango1093",
     image: "/defaultBcg.jpeg",
-    siteURL: "https://gatsby-blog123.netlify.app"
+    siteUrl: "https://gatsby-blog123.netlify.app"
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -27,6 +27,15 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://gatsby-blog123.netlify.app',
+        sitemap: 'https://gatsby-blog123.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
