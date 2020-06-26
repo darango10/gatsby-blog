@@ -28,6 +28,7 @@
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-sitemap": "^2.4.7",
     "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-plugin-tawk": "^1.0.0",
     "gatsby-plugin-transition-link": "^1.18.0",
     "gatsby-source-contentful": "^2.3.15",
     "gatsby-source-filesystem": "^2.3.11",
